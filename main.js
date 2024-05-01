@@ -25,7 +25,7 @@ function main() {
   let TextBox = document.getElementById("InputDatos");
   const datos = TextBox.value;
   const separatedByLines = datos.split(";");
-  const separatedByWords = [];
+  let separatedByWords = [];
 
   separatedByLines.forEach((line) => {
     separatedByWords.push(line.split(" "));
@@ -34,7 +34,7 @@ function main() {
   let curTeam,
     curPro,
     time = 0;
-  const results = [];
+  let results = [];
 
   for (let i = 0; i < separatedByWords.length; i++) {
     time = 0;
@@ -57,7 +57,7 @@ function main() {
     }
   }
 
-  const solutions = [];
+  let solutions = [];
   let solucionados = 0;
 
   for (let i = 0; i < results.length; i += 2) {
