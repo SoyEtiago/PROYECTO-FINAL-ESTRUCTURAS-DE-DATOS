@@ -1,38 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
 }
+
+main {
+    padding: 8px;
+}
+
 h1 {
     color: #333;
     text-align: center;
 }
 
-.Botones{
-  display: flex;
-  justify-content: center;
-
-
+.Botones {
+    display: flex;
+    justify-content: center;
 }
-.Boton1 {
-    width: 10%;
-    height: 30px;
-    border: 0px solid #ffffff;
-    border-radius: 5px;
+
+.Botones__item {
+    margin: 4px;
+    padding: 8px;
+    height: 80%;
+    border-radius: 6px;
     background-color: #333;
     color: #ffffff;
     cursor: pointer;
 }
-.TextBoxInputDatos{
+
+.Input_container {
+    margin: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#InputDatos{
-    width: 20%;
+
+.Input_container input {
+    text-overflow: clip;
+    width: 100%;
     background-color: #eee;
     border: 2px solid #ccc;
     border-radius: 5px;
-    height: 60px;
-    font-size: 20px;
+    height: 95%;
+    font-size: 1.2rem;
     text-align: center;
 }
